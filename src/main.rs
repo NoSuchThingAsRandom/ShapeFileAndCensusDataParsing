@@ -1,186 +1,41 @@
-extern crate num_traits;
-// Source: https://webarchive.nationalarchives.gov.uk/ukgwa/20160107193025/http://www.ons.gov.uk/ons/guide-method/geography/beginner-s-guide/census/output-area--oas-/index.html
-// We ignore the inner rings of polygons?
-extern crate polylabel;
-
+#[macro_use]
+extern crate enum_map;
 
 use std::time::Instant;
 
-use geo_types::{Coordinate, LineString};
-use plotters::coord::Shift;
-use plotters::prelude::*;
-use polylabel::polylabel;
-use shapefile::Shape;
-use shapefile::dbase::{FieldValue, Record};
+use futures::executor::block_on;
 
-const DEBUG_ITERATION: usize = 500;
-const GRID_SIZE: u32 = 16384;
-const X_OFFSET: i32 = 75000;
-const Y_OFFSET: i32 = 1000;
+use crate::nomis_download::DataFetcher;
 
-fn convert_geo_point_to_pixel(coord: Coordinate<f64>) -> (i32, i32) {
-    (
-        (coord.x - X_OFFSET as f64) as i32 / 45,
-        GRID_SIZE as i32 - (coord.y - Y_OFFSET as f64) as i32 / 45,
-    )
-}
+mod nomis_download;
+mod parsing_error;
+mod population_and_density_per_output_area;
+//https://www.nomisweb.co.uk/api/v01/dataset/NM_144_1.data.csv?date=latest&geography=1237321209...1237321232,1237326502...1237326564,1237321121...1237321160,1237326565...1237326631,1237321161...1237321208,1237320728...1237320838,1237321276...1237321319,1237327043...1237327140,1237321233...1237321275,1237322311...1237322476,1237320313...1237320527,1237324154...1237324261,1237326984,1237326985,1237324262...1237324409,1237320528...1237320578,1237320595...1237320616,1237320579...1237320594,1237320617...1237320638,1237321343...1237321368,1237321320...1237321342,1237321369...1237321422,1237325041...1237325213,1237320639...1237320680,1237327368,1237320681,1237320682,1237327369,1237320683...1237320727,1237321002...1237321048,1237326991,1237321049...1237321053,1237326992,1237326993,1237321054...1237321061,1237326994,1237321062,1237326995,1237321063...1237321120,1237321423...1237321461,1237321478...1237321497,1237321462...1237321477,1237322477...1237322481,1237326959,1237322482,1237322483,1237326960,1237322484,1237322485,1237326961,1237322486,1237322487,1237326962,1237322488...1237322490,1237326963,1237322491...1237322633,1237327242...1237327256,1237324410...1237324722,1237324926...1237324989,1237326982,1237324990...1237324995,1237326983,1237324996...1237325001,1237327257...1237327289,1237325002...1237325028,1237327028,1237325029...1237325032,1237327029,1237325033...1237325035,1237327030,1237325036...1237325038,1237327031,1237325039,1237325040,1237325214...1237325296,1237327290...1237327325,1237325297...1237325349,1237321498...1237321537,1237326632...1237326694,1237327147...1237327183,1237321538...1237321570,1237325586...1237325759,1237326141...1237326194,1237327018,1237326195,1237326497,1237327019,1237326196,1237326498,1237326197,1237327020,1237326198,1237326199,1237326499,1237327021,1237326500,1237326200...1237326204,1237327022,1237326205...1237326207,1237327023,1237326208...1237326210,1237326501,1237327024...1237327027,1237326211...1237326230,1237320839...1237321001,1237326376...1237326496,1237327184...1237327241,1237321820...1237321838,1237321796...1237321819,1237321839...1237321875,1237322206...1237322265,1237326964,1237322266,1237326965,1237326966,1237327009,1237322267,1237327010,1237322268,1237326967,1237322269,1237322270,1237326968,1237327011,1237327012,1237326969,1237322271,1237327013,1237322272,1237327014,1237322273,1237326970,1237327015,1237322274,1237327016,1237322275,1237326971,1237327017,1237326972,1237322276...1237322280,1237322282...1237322299,1237322301...1237322310,1237322281,1237322300,1237323052...1237323293,1237327141,1237327142,1237323294...1237323302,1237327143,1237323303,1237323304,1237327144,1237323305,1237323306,1237327145,1237323307,1237327146,1237323308...1237323312,1237323687...1237323875,1237324723...1237324846,1237326989,1237324847...1237324871,1237326990,1237324872...1237324925,1237325760...1237325934,1237319791...1237319808,1237319681...1237319688,1237319894...1237319947,1237320029...1237320062,1237320079...1237320117,1237320138...1237320157,1237320197...1237320217,1237320236...1237320252,1237320273...1237320312,1237319689...1237319790,1237319809...1237319893,1237319948...1237320028,1237320063...1237320078,1237320118...1237320137,1237320158...1237320196,1237320218...1237320235,1237320253...1237320272,1237321898...1237321915,1237322047...1237322067,1237326920...1237326958,1237321876...1237321897,1237322024...1237322046,1237322068...1237322081,1237321946...1237321975,1237322082...1237322097,1237321916...1237321945,1237321976...1237322023,1237322098...1237322205,1237322951...1237323051,1237323442,1237323443,1237323449,1237323444...1237323448,1237323450...1237323602,1237327365,1237323603,1237323604,1237327366,1237327367,1237323605...1237323686,1237323876...1237323996,1237326986,1237323997...1237324005,1237326987,1237324006...1237324011,1237326988,1237324012...1237324115,1237326973,1237324116...1237324124,1237326974,1237324125...1237324153,1237325350...1237325486,1237325935...1237326140,1237326231...1237326375,1237321571...1237321607,1237321740...1237321757,1237321608...1237321642,1237326695...1237326821,1237327034,1237327035,1237321643...1237321653,1237327036,1237327037,1237321654...1237321663,1237327038,1237327039,1237321664,1237327040,1237321665...1237321667,1237327041,1237321668,1237327042,1237321669,1237321705...1237321724,1237321758...1237321773,1237321670...1237321704,1237321774...1237321795,1237321725...1237321739,1237326822...1237326919,1237322634...1237322647,1237326975,1237326976,1237322648...1237322651,1237326977,1237322652...1237322659,1237326978,1237322660...1237322679,1237326979,1237322680...1237322692,1237326980,1237322693...1237322700,1237326981,1237322701...1237322757,1237327032,1237322758...1237322764,1237327033,1237322765...1237322950,1237323313...1237323433,1237326996...1237326998,1237323434,1237326999...1237327001,1237323435,1237327002,1237323436,1237327003,1237323437,1237327004,1237323438,1237327005,1237327006,1237323439,1237327007,1237323440,1237323441,1237327008,1237325487...1237325520,1237327326...1237327348,1237325521...1237325585,1237327349...1237327364,1237327370...1237327380,1237328174,1237327381...1237327383,1237328175,1237327384,1237328176,1237327385...1237327388,1237328177,1237327389...1237327391,1237328178,1237327392...1237327396,1237328179,1237327397...1237327399,1237328180,1237327400...1237327481,1237328205,1237327482,1237328206,1237327483...1237327495,1237328207,1237327496...1237327499,1237328208,1237328209,1237327500...1237327503,1237328210,1237327504...1237327595,1237328195,1237327596,1237328196,1237328197,1237327597...1237327600,1237328198,1237327601...1237327603,1237328199,1237327604,1237327605,1237328200,1237327606...1237327608,1237328201,1237327609...1237327615,1237328202,1237327616...1237327624,1237328203,1237327625...1237327628,1237328204,1237327629...1237327668,1237328185,1237327669...1237327692,1237328186,1237327693...1237327740,1237328238...1237328240,1237327741,1237328241,1237327742,1237328242...1237328244,1237327743...1237327747,1237328245,1237328246,1237327748...1237327750,1237328247,1237327751...1237327753,1237328248,1237327754...1237327756,1237328249,1237327757...1237327777,1237328250,1237327778...1237327927,1237328188,1237327928,1237327929,1237328189,1237327930...1237327934,1237328190,1237327935...1237327948,1237328191,1237327949...1237327965,1237328224,1237327966...1237327968,1237328225,1237327969...1237327971,1237328226,1237327972...1237327976,1237328227,1237327977,1237328148...1237328168,1237328192,1237328169...1237328171,1237328193,1237328172,1237328194,1237328173,1237327978...1237327995,1237328181,1237328182,1237327996...1237328005,1237328183,1237328006...1237328011,1237328184,1237328012...1237328035,1237328187,1237328036...1237328042,1237328211,1237328043,1237328212,1237328044...1237328046,1237328213...1237328215,1237328047...1237328050,1237328216...1237328219,1237328051,1237328220,1237328221,1237328052,1237328222,1237328223,1237328053...1237328056,1237328228...1237328235,1237328057,1237328058,1237328236,1237328237,1237328059...1237328147,1157629484...1157629488&rural_urban=0&cell=0,7&measures=20100
 
-#[derive(Debug)]
-struct Area {
-    centre: Option<Coordinate<f64>>,
-    points: geo_types::Polygon<f64>,
-    label: String,
-    code: String,
-    name: String,
-    alt_name: String,
-}
-
-impl Area {
-    fn new_from_record(record: Record, polygon: geo_types::Polygon<f64>) -> Area {
-        let label_record = record.get("label").expect("Missing required field 'label'");
-        let label;
-        if let FieldValue::Character(option_val) = label_record {
-            label = option_val.clone().unwrap_or_else(|| String::from(""));
-        } else {
-            panic!("Unexpected field value type for label: {}", label_record);
-        }
-
-
-        let code_record = record.get("code").expect("Missing required field 'code'");
-        let code;
-        if let FieldValue::Character(option_val) = code_record {
-            code = option_val.clone().unwrap_or_else(|| String::from(""));
-        } else {
-            panic!("Unexpected field value type for code: {}", code_record);
-        }
-
-
-        let name_record = record.get("name").expect("Missing required field 'name'");
-        let name;
-        if let FieldValue::Character(option_val) = name_record {
-            name = option_val.clone().unwrap_or_else(|| String::from(""));
-        } else {
-            panic!("Unexpected field value type for name: {}", name_record);
-        }
-
-        let alt_name_record = record.get("altname").expect("Missing required field 'alt_name'");
-        let alt_name;
-        if let FieldValue::Character(option_val) = alt_name_record {
-            alt_name = option_val.clone().unwrap_or_else(|| String::from(""));
-        } else {
-            panic!("Unexpected field value type for alt_name: {}", alt_name_record);
-        }
-
-        Area {
-            centre: None,
-            points: polygon,
-            code,
-            label,
-            name,
-            alt_name,
-        }
-    }
-    /// Retrieves the center point or calculates the centre
-    /// Also stores the result
-    fn find_centre_point(&mut self) -> Coordinate<f64> {
-        if self.centre.is_none() {
-            self.centre = Some(Coordinate::from(polylabel(&self.points, &0.1).unwrap()));
-        }
-        self.centre.unwrap()
-    }
-    /// Retrieves the center point or calculates the centre
-    /// DOES NOT CACHE THE RESULT
-    fn get_centre_point(&self) -> Coordinate<f64> {
-        self.centre.unwrap_or_else(|| Coordinate::from(polylabel(&self.points, &0.1).unwrap()))
-    }
-}
-
-
-struct Map {
-    data: Vec<Area>,
-    min_x: i32,
-    min_y: i32,
-    max_x: i32,
-    max_y: i32,
-}
-
-impl Map {
-    fn default() -> Map {
-        Map { data: Vec::default(), min_x: i32::MAX, min_y: i32::MAX, max_x: i32::MIN, max_y: i32::MIN }
-    }
-    fn from_file(filename: &str) -> Map {
-        //census_map_areas/England_wa_2011/england_wa_2011.shp
-        let mut map = Map::default();
-        let mut reader =
-            shapefile::Reader::from_path(filename)
-                .unwrap();
-        let start_time = Instant::now();
-        for (index, shape_record) in reader.iter_shapes_and_records().enumerate() {
-            let (shape, record) = shape_record.unwrap();
-            if let Shape::Polygon(polygon) = shape {
-                assert!(!polygon.rings().is_empty());
-                let rings: Vec<Coordinate<f64>>;
-                let mut interior_ring;
-                if polygon.rings().len() == 1 {
-                    rings = polygon.rings()[0].points().iter().map(|p| geo_types::Coordinate::from(*p)).collect();
-                    interior_ring = Vec::new();
-                } else {
-                    interior_ring = polygon.rings().iter().map(|r| LineString::from(r.points().iter().map(|p| geo_types::Coordinate::from(*p)).collect::<Vec<Coordinate<f64>>>())).collect();
-                    rings = interior_ring.pop().unwrap().0;
-                }
-                let new_poly = geo_types::Polygon::new(LineString::from(rings), interior_ring);
-                map.data.push(Area::new_from_record(record, new_poly));
-            } else {
-                panic!("Unexpected shape: {}", shape);
-            }
-            if index % DEBUG_ITERATION == 0 {
-                println!("At index {} with time {:?}", index, start_time.elapsed());
-            }
-        }
-        map
-    }
-
-    fn draw_with_labels<T: plotters::prelude::DrawingBackend>(&self, drawing_area: DrawingArea<T, Shift>) {
-        self.draw(drawing_area, true);
-    }
-    fn draw<T: plotters::prelude::DrawingBackend>(&self, drawing_area: DrawingArea<T, Shift>, show_labels: bool) {
-        let style = TextStyle::from(("sans-serif", 20).into_font()).color(&RED);
-        for data in &self.data {
-            if show_labels {
-                let centre = data.centre.unwrap_or_else(|| data.get_centre_point());
-                let centre = convert_geo_point_to_pixel(centre);
-                drawing_area.draw_text(&data.label, &style, centre).unwrap();
-            }
-            let polygon = &data.points;
-            for coords in &polygon.exterior().0 {
-                let coords = convert_geo_point_to_pixel(*coords);
-                //println!("Drawing pixel at: {} {:?}", point, coords);
-                if coords.0 > GRID_SIZE as i32 {
-                    panic!("X coord is too big! Coord: {}", coords.0);
-                } else if coords.1 > GRID_SIZE as i32 {
-                    panic!("Y coord is too big! Coord: {}", coords.1);
-                } else if coords.0 < 0 {
-                    panic!("X coord is too small! Coord: {}", coords.0);
-                } else if coords.1 < 0 {
-                    panic!("Y coord is too small! Coord: {}", coords.1);
-                } else {
-                    //println!("Drawing pixel at {:?}", coords);
-                    drawing_area.draw_pixel(coords, &BLACK).unwrap();
-                }
-            }
-        }
-        drawing_area.present().unwrap();
-    }
-}
-
-fn main() {
+#[tokio::main]
+async fn main() -> Result<(), String> {
     println!("Hello, world!");
 
-    let map = Map::from_file("census_map_areas/England_wa_2011/england_wa_2011.shp");
-    let draw_backend =
-        BitMapBackend::new("grid.png", (GRID_SIZE, GRID_SIZE)).into_drawing_area();
-    draw_backend.fill(&WHITE).unwrap();
-    map.draw(draw_backend, false);
-    //load_data();
-    print!("Done");
+    let reader = csv::Reader::from_path("data/download/PopulationAndDensityPerEnglandOutputArea(144).csv").unwrap();
+    println!("{:#?}", nomis_download::DataFetcher::parse_table(reader));
+    return Ok(());
+
+
+    let mut client = nomis_download::DataFetcher::default();
+    //let data = client.get_datasets().await.unwrap();
+    //let data = nomis_download::DataFetcher::read_json("dataset_dump.json".to_string()).await.unwrap();
+    //let tables = DataFetcher::parse_jsontable_list(data).unwrap();
+    let start_time = Instant::now();
+    //nomis_download::DataFetcher::write_file("data/download/PopulationAndDensityPerEnglandOutputArea(144).csv".to_string(), client.get_table("NM_144_1".to_string(),500).await.unwrap()).unwrap();
+    println!("Finished in: {:?}", start_time.elapsed());
+    //nomis_download::DataFetcher::parse_file().await.unwrap();
+    //read_csv("data/census_data/accomodation_type_london.csv");
+    return Ok(());
+    /*    let map = Map::from_file("census_map_areas/England_wa_2011/england_wa_2011.shp");
+        let draw_backend =
+            BitMapBackend::new("grid.png", (GRID_SIZE, GRID_SIZE)).into_drawing_area();
+        draw_backend.fill(&WHITE).unwrap();
+        map.draw(draw_backend, false);
+        //load_data();
+        print!("Done");*/
 }

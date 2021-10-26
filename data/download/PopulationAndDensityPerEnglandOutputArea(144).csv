@@ -1,0 +1,501 @@
+"GEOGRAPHY_NAME","GEOGRAPHY_TYPE","RURAL_URBAN_NAME","RURAL_URBAN_TYPECODE","CELL_NAME","MEASURES_NAME","OBS_VALUE","OBS_STATUS","RECORD_OFFSET","RECORD_COUNT"
+"E00062207","2011 output areas","Total",2000,"All usual residents","Value",242,"A",0,35645376
+"E00062207","2011 output areas","Total",2000,"All usual residents","Percent",100.0,"A",1,35645376
+"E00062207","2011 output areas","Total",2000,"Males","Value",116,"A",2,35645376
+"E00062207","2011 output areas","Total",2000,"Males","Percent",47.9,"A",3,35645376
+"E00062207","2011 output areas","Total",2000,"Females","Value",126,"A",4,35645376
+"E00062207","2011 output areas","Total",2000,"Females","Percent",52.1,"A",5,35645376
+"E00062207","2011 output areas","Total",2000,"Lives in a household","Value",242,"A",6,35645376
+"E00062207","2011 output areas","Total",2000,"Lives in a household","Percent",100.0,"A",7,35645376
+"E00062207","2011 output areas","Total",2000,"Lives in a communal establishment","Value",0,"A",8,35645376
+"E00062207","2011 output areas","Total",2000,"Lives in a communal establishment","Percent",0.0,"A",9,35645376
+"E00062207","2011 output areas","Total",2000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",7,"A",10,35645376
+"E00062207","2011 output areas","Total",2000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",11,35645376
+"E00062207","2011 output areas","Total",2000,"Area (Hectares)","Value",865.24,"A",12,35645376
+"E00062207","2011 output areas","Total",2000,"Area (Hectares)","Percent",,"Q",13,35645376
+"E00062207","2011 output areas","Total",2000,"Density (number of persons per hectare)","Value",0.3,"A",14,35645376
+"E00062207","2011 output areas","Total",2000,"Density (number of persons per hectare)","Percent",,"Q",15,35645376
+"E00062207","2011 output areas","Urban (total)",2000,"All usual residents","Value",0,"A",16,35645376
+"E00062207","2011 output areas","Urban (total)",2000,"All usual residents","Percent",,"Q",17,35645376
+"E00062207","2011 output areas","Urban (total)",2000,"Males","Value",0,"A",18,35645376
+"E00062207","2011 output areas","Urban (total)",2000,"Males","Percent",,"Q",19,35645376
+"E00062207","2011 output areas","Urban (total)",2000,"Females","Value",0,"A",20,35645376
+"E00062207","2011 output areas","Urban (total)",2000,"Females","Percent",,"Q",21,35645376
+"E00062207","2011 output areas","Urban (total)",2000,"Lives in a household","Value",0,"A",22,35645376
+"E00062207","2011 output areas","Urban (total)",2000,"Lives in a household","Percent",,"Q",23,35645376
+"E00062207","2011 output areas","Urban (total)",2000,"Lives in a communal establishment","Value",0,"A",24,35645376
+"E00062207","2011 output areas","Urban (total)",2000,"Lives in a communal establishment","Percent",,"Q",25,35645376
+"E00062207","2011 output areas","Urban (total)",2000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",0,"A",26,35645376
+"E00062207","2011 output areas","Urban (total)",2000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",27,35645376
+"E00062207","2011 output areas","Urban (total)",2000,"Area (Hectares)","Value",0.00,"A",28,35645376
+"E00062207","2011 output areas","Urban (total)",2000,"Area (Hectares)","Percent",,"Q",29,35645376
+"E00062207","2011 output areas","Urban (total)",2000,"Density (number of persons per hectare)","Value",,"Q",30,35645376
+"E00062207","2011 output areas","Urban (total)",2000,"Density (number of persons per hectare)","Percent",,"Q",31,35645376
+"E00062207","2011 output areas","Urban major conurbation",1000,"All usual residents","Value",0,"A",32,35645376
+"E00062207","2011 output areas","Urban major conurbation",1000,"All usual residents","Percent",,"Q",33,35645376
+"E00062207","2011 output areas","Urban major conurbation",1000,"Males","Value",0,"A",34,35645376
+"E00062207","2011 output areas","Urban major conurbation",1000,"Males","Percent",,"Q",35,35645376
+"E00062207","2011 output areas","Urban major conurbation",1000,"Females","Value",0,"A",36,35645376
+"E00062207","2011 output areas","Urban major conurbation",1000,"Females","Percent",,"Q",37,35645376
+"E00062207","2011 output areas","Urban major conurbation",1000,"Lives in a household","Value",0,"A",38,35645376
+"E00062207","2011 output areas","Urban major conurbation",1000,"Lives in a household","Percent",,"Q",39,35645376
+"E00062207","2011 output areas","Urban major conurbation",1000,"Lives in a communal establishment","Value",0,"A",40,35645376
+"E00062207","2011 output areas","Urban major conurbation",1000,"Lives in a communal establishment","Percent",,"Q",41,35645376
+"E00062207","2011 output areas","Urban major conurbation",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",0,"A",42,35645376
+"E00062207","2011 output areas","Urban major conurbation",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",43,35645376
+"E00062207","2011 output areas","Urban major conurbation",1000,"Area (Hectares)","Value",0.00,"A",44,35645376
+"E00062207","2011 output areas","Urban major conurbation",1000,"Area (Hectares)","Percent",,"Q",45,35645376
+"E00062207","2011 output areas","Urban major conurbation",1000,"Density (number of persons per hectare)","Value",,"Q",46,35645376
+"E00062207","2011 output areas","Urban major conurbation",1000,"Density (number of persons per hectare)","Percent",,"Q",47,35645376
+"E00062207","2011 output areas","Urban minor conurbation",1000,"All usual residents","Value",0,"A",48,35645376
+"E00062207","2011 output areas","Urban minor conurbation",1000,"All usual residents","Percent",,"Q",49,35645376
+"E00062207","2011 output areas","Urban minor conurbation",1000,"Males","Value",0,"A",50,35645376
+"E00062207","2011 output areas","Urban minor conurbation",1000,"Males","Percent",,"Q",51,35645376
+"E00062207","2011 output areas","Urban minor conurbation",1000,"Females","Value",0,"A",52,35645376
+"E00062207","2011 output areas","Urban minor conurbation",1000,"Females","Percent",,"Q",53,35645376
+"E00062207","2011 output areas","Urban minor conurbation",1000,"Lives in a household","Value",0,"A",54,35645376
+"E00062207","2011 output areas","Urban minor conurbation",1000,"Lives in a household","Percent",,"Q",55,35645376
+"E00062207","2011 output areas","Urban minor conurbation",1000,"Lives in a communal establishment","Value",0,"A",56,35645376
+"E00062207","2011 output areas","Urban minor conurbation",1000,"Lives in a communal establishment","Percent",,"Q",57,35645376
+"E00062207","2011 output areas","Urban minor conurbation",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",0,"A",58,35645376
+"E00062207","2011 output areas","Urban minor conurbation",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",59,35645376
+"E00062207","2011 output areas","Urban minor conurbation",1000,"Area (Hectares)","Value",0.00,"A",60,35645376
+"E00062207","2011 output areas","Urban minor conurbation",1000,"Area (Hectares)","Percent",,"Q",61,35645376
+"E00062207","2011 output areas","Urban minor conurbation",1000,"Density (number of persons per hectare)","Value",,"Q",62,35645376
+"E00062207","2011 output areas","Urban minor conurbation",1000,"Density (number of persons per hectare)","Percent",,"Q",63,35645376
+"E00062207","2011 output areas","Urban city and town",1000,"All usual residents","Value",0,"A",64,35645376
+"E00062207","2011 output areas","Urban city and town",1000,"All usual residents","Percent",,"Q",65,35645376
+"E00062207","2011 output areas","Urban city and town",1000,"Males","Value",0,"A",66,35645376
+"E00062207","2011 output areas","Urban city and town",1000,"Males","Percent",,"Q",67,35645376
+"E00062207","2011 output areas","Urban city and town",1000,"Females","Value",0,"A",68,35645376
+"E00062207","2011 output areas","Urban city and town",1000,"Females","Percent",,"Q",69,35645376
+"E00062207","2011 output areas","Urban city and town",1000,"Lives in a household","Value",0,"A",70,35645376
+"E00062207","2011 output areas","Urban city and town",1000,"Lives in a household","Percent",,"Q",71,35645376
+"E00062207","2011 output areas","Urban city and town",1000,"Lives in a communal establishment","Value",0,"A",72,35645376
+"E00062207","2011 output areas","Urban city and town",1000,"Lives in a communal establishment","Percent",,"Q",73,35645376
+"E00062207","2011 output areas","Urban city and town",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",0,"A",74,35645376
+"E00062207","2011 output areas","Urban city and town",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",75,35645376
+"E00062207","2011 output areas","Urban city and town",1000,"Area (Hectares)","Value",0.00,"A",76,35645376
+"E00062207","2011 output areas","Urban city and town",1000,"Area (Hectares)","Percent",,"Q",77,35645376
+"E00062207","2011 output areas","Urban city and town",1000,"Density (number of persons per hectare)","Value",,"Q",78,35645376
+"E00062207","2011 output areas","Urban city and town",1000,"Density (number of persons per hectare)","Percent",,"Q",79,35645376
+"E00062207","2011 output areas","Urban city and town in a sparse setting",1000,"All usual residents","Value",0,"A",80,35645376
+"E00062207","2011 output areas","Urban city and town in a sparse setting",1000,"All usual residents","Percent",,"Q",81,35645376
+"E00062207","2011 output areas","Urban city and town in a sparse setting",1000,"Males","Value",0,"A",82,35645376
+"E00062207","2011 output areas","Urban city and town in a sparse setting",1000,"Males","Percent",,"Q",83,35645376
+"E00062207","2011 output areas","Urban city and town in a sparse setting",1000,"Females","Value",0,"A",84,35645376
+"E00062207","2011 output areas","Urban city and town in a sparse setting",1000,"Females","Percent",,"Q",85,35645376
+"E00062207","2011 output areas","Urban city and town in a sparse setting",1000,"Lives in a household","Value",0,"A",86,35645376
+"E00062207","2011 output areas","Urban city and town in a sparse setting",1000,"Lives in a household","Percent",,"Q",87,35645376
+"E00062207","2011 output areas","Urban city and town in a sparse setting",1000,"Lives in a communal establishment","Value",0,"A",88,35645376
+"E00062207","2011 output areas","Urban city and town in a sparse setting",1000,"Lives in a communal establishment","Percent",,"Q",89,35645376
+"E00062207","2011 output areas","Urban city and town in a sparse setting",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",0,"A",90,35645376
+"E00062207","2011 output areas","Urban city and town in a sparse setting",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",91,35645376
+"E00062207","2011 output areas","Urban city and town in a sparse setting",1000,"Area (Hectares)","Value",0.00,"A",92,35645376
+"E00062207","2011 output areas","Urban city and town in a sparse setting",1000,"Area (Hectares)","Percent",,"Q",93,35645376
+"E00062207","2011 output areas","Urban city and town in a sparse setting",1000,"Density (number of persons per hectare)","Value",,"Q",94,35645376
+"E00062207","2011 output areas","Urban city and town in a sparse setting",1000,"Density (number of persons per hectare)","Percent",,"Q",95,35645376
+"E00062207","2011 output areas","Rural (total)",2000,"All usual residents","Value",242,"A",96,35645376
+"E00062207","2011 output areas","Rural (total)",2000,"All usual residents","Percent",100.0,"A",97,35645376
+"E00062207","2011 output areas","Rural (total)",2000,"Males","Value",116,"A",98,35645376
+"E00062207","2011 output areas","Rural (total)",2000,"Males","Percent",47.9,"A",99,35645376
+"E00062207","2011 output areas","Rural (total)",2000,"Females","Value",126,"A",100,35645376
+"E00062207","2011 output areas","Rural (total)",2000,"Females","Percent",52.1,"A",101,35645376
+"E00062207","2011 output areas","Rural (total)",2000,"Lives in a household","Value",242,"A",102,35645376
+"E00062207","2011 output areas","Rural (total)",2000,"Lives in a household","Percent",100.0,"A",103,35645376
+"E00062207","2011 output areas","Rural (total)",2000,"Lives in a communal establishment","Value",0,"A",104,35645376
+"E00062207","2011 output areas","Rural (total)",2000,"Lives in a communal establishment","Percent",0.0,"A",105,35645376
+"E00062207","2011 output areas","Rural (total)",2000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",7,"A",106,35645376
+"E00062207","2011 output areas","Rural (total)",2000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",107,35645376
+"E00062207","2011 output areas","Rural (total)",2000,"Area (Hectares)","Value",865.24,"A",108,35645376
+"E00062207","2011 output areas","Rural (total)",2000,"Area (Hectares)","Percent",,"Q",109,35645376
+"E00062207","2011 output areas","Rural (total)",2000,"Density (number of persons per hectare)","Value",0.3,"A",110,35645376
+"E00062207","2011 output areas","Rural (total)",2000,"Density (number of persons per hectare)","Percent",,"Q",111,35645376
+"E00062207","2011 output areas","Rural town and fringe",1000,"All usual residents","Value",0,"A",112,35645376
+"E00062207","2011 output areas","Rural town and fringe",1000,"All usual residents","Percent",,"Q",113,35645376
+"E00062207","2011 output areas","Rural town and fringe",1000,"Males","Value",0,"A",114,35645376
+"E00062207","2011 output areas","Rural town and fringe",1000,"Males","Percent",,"Q",115,35645376
+"E00062207","2011 output areas","Rural town and fringe",1000,"Females","Value",0,"A",116,35645376
+"E00062207","2011 output areas","Rural town and fringe",1000,"Females","Percent",,"Q",117,35645376
+"E00062207","2011 output areas","Rural town and fringe",1000,"Lives in a household","Value",0,"A",118,35645376
+"E00062207","2011 output areas","Rural town and fringe",1000,"Lives in a household","Percent",,"Q",119,35645376
+"E00062207","2011 output areas","Rural town and fringe",1000,"Lives in a communal establishment","Value",0,"A",120,35645376
+"E00062207","2011 output areas","Rural town and fringe",1000,"Lives in a communal establishment","Percent",,"Q",121,35645376
+"E00062207","2011 output areas","Rural town and fringe",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",0,"A",122,35645376
+"E00062207","2011 output areas","Rural town and fringe",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",123,35645376
+"E00062207","2011 output areas","Rural town and fringe",1000,"Area (Hectares)","Value",0.00,"A",124,35645376
+"E00062207","2011 output areas","Rural town and fringe",1000,"Area (Hectares)","Percent",,"Q",125,35645376
+"E00062207","2011 output areas","Rural town and fringe",1000,"Density (number of persons per hectare)","Value",,"Q",126,35645376
+"E00062207","2011 output areas","Rural town and fringe",1000,"Density (number of persons per hectare)","Percent",,"Q",127,35645376
+"E00062207","2011 output areas","Rural town and fringe in a sparse setting",1000,"All usual residents","Value",0,"A",128,35645376
+"E00062207","2011 output areas","Rural town and fringe in a sparse setting",1000,"All usual residents","Percent",,"Q",129,35645376
+"E00062207","2011 output areas","Rural town and fringe in a sparse setting",1000,"Males","Value",0,"A",130,35645376
+"E00062207","2011 output areas","Rural town and fringe in a sparse setting",1000,"Males","Percent",,"Q",131,35645376
+"E00062207","2011 output areas","Rural town and fringe in a sparse setting",1000,"Females","Value",0,"A",132,35645376
+"E00062207","2011 output areas","Rural town and fringe in a sparse setting",1000,"Females","Percent",,"Q",133,35645376
+"E00062207","2011 output areas","Rural town and fringe in a sparse setting",1000,"Lives in a household","Value",0,"A",134,35645376
+"E00062207","2011 output areas","Rural town and fringe in a sparse setting",1000,"Lives in a household","Percent",,"Q",135,35645376
+"E00062207","2011 output areas","Rural town and fringe in a sparse setting",1000,"Lives in a communal establishment","Value",0,"A",136,35645376
+"E00062207","2011 output areas","Rural town and fringe in a sparse setting",1000,"Lives in a communal establishment","Percent",,"Q",137,35645376
+"E00062207","2011 output areas","Rural town and fringe in a sparse setting",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",0,"A",138,35645376
+"E00062207","2011 output areas","Rural town and fringe in a sparse setting",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",139,35645376
+"E00062207","2011 output areas","Rural town and fringe in a sparse setting",1000,"Area (Hectares)","Value",0.00,"A",140,35645376
+"E00062207","2011 output areas","Rural town and fringe in a sparse setting",1000,"Area (Hectares)","Percent",,"Q",141,35645376
+"E00062207","2011 output areas","Rural town and fringe in a sparse setting",1000,"Density (number of persons per hectare)","Value",,"Q",142,35645376
+"E00062207","2011 output areas","Rural town and fringe in a sparse setting",1000,"Density (number of persons per hectare)","Percent",,"Q",143,35645376
+"E00062207","2011 output areas","Rural village",1000,"All usual residents","Value",0,"A",144,35645376
+"E00062207","2011 output areas","Rural village",1000,"All usual residents","Percent",,"Q",145,35645376
+"E00062207","2011 output areas","Rural village",1000,"Males","Value",0,"A",146,35645376
+"E00062207","2011 output areas","Rural village",1000,"Males","Percent",,"Q",147,35645376
+"E00062207","2011 output areas","Rural village",1000,"Females","Value",0,"A",148,35645376
+"E00062207","2011 output areas","Rural village",1000,"Females","Percent",,"Q",149,35645376
+"E00062207","2011 output areas","Rural village",1000,"Lives in a household","Value",0,"A",150,35645376
+"E00062207","2011 output areas","Rural village",1000,"Lives in a household","Percent",,"Q",151,35645376
+"E00062207","2011 output areas","Rural village",1000,"Lives in a communal establishment","Value",0,"A",152,35645376
+"E00062207","2011 output areas","Rural village",1000,"Lives in a communal establishment","Percent",,"Q",153,35645376
+"E00062207","2011 output areas","Rural village",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",0,"A",154,35645376
+"E00062207","2011 output areas","Rural village",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",155,35645376
+"E00062207","2011 output areas","Rural village",1000,"Area (Hectares)","Value",0.00,"A",156,35645376
+"E00062207","2011 output areas","Rural village",1000,"Area (Hectares)","Percent",,"Q",157,35645376
+"E00062207","2011 output areas","Rural village",1000,"Density (number of persons per hectare)","Value",,"Q",158,35645376
+"E00062207","2011 output areas","Rural village",1000,"Density (number of persons per hectare)","Percent",,"Q",159,35645376
+"E00062207","2011 output areas","Rural village in a sparse setting",1000,"All usual residents","Value",0,"A",160,35645376
+"E00062207","2011 output areas","Rural village in a sparse setting",1000,"All usual residents","Percent",,"Q",161,35645376
+"E00062207","2011 output areas","Rural village in a sparse setting",1000,"Males","Value",0,"A",162,35645376
+"E00062207","2011 output areas","Rural village in a sparse setting",1000,"Males","Percent",,"Q",163,35645376
+"E00062207","2011 output areas","Rural village in a sparse setting",1000,"Females","Value",0,"A",164,35645376
+"E00062207","2011 output areas","Rural village in a sparse setting",1000,"Females","Percent",,"Q",165,35645376
+"E00062207","2011 output areas","Rural village in a sparse setting",1000,"Lives in a household","Value",0,"A",166,35645376
+"E00062207","2011 output areas","Rural village in a sparse setting",1000,"Lives in a household","Percent",,"Q",167,35645376
+"E00062207","2011 output areas","Rural village in a sparse setting",1000,"Lives in a communal establishment","Value",0,"A",168,35645376
+"E00062207","2011 output areas","Rural village in a sparse setting",1000,"Lives in a communal establishment","Percent",,"Q",169,35645376
+"E00062207","2011 output areas","Rural village in a sparse setting",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",0,"A",170,35645376
+"E00062207","2011 output areas","Rural village in a sparse setting",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",171,35645376
+"E00062207","2011 output areas","Rural village in a sparse setting",1000,"Area (Hectares)","Value",0.00,"A",172,35645376
+"E00062207","2011 output areas","Rural village in a sparse setting",1000,"Area (Hectares)","Percent",,"Q",173,35645376
+"E00062207","2011 output areas","Rural village in a sparse setting",1000,"Density (number of persons per hectare)","Value",,"Q",174,35645376
+"E00062207","2011 output areas","Rural village in a sparse setting",1000,"Density (number of persons per hectare)","Percent",,"Q",175,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings",1000,"All usual residents","Value",242,"A",176,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings",1000,"All usual residents","Percent",100.0,"A",177,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings",1000,"Males","Value",116,"A",178,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings",1000,"Males","Percent",47.9,"A",179,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings",1000,"Females","Value",126,"A",180,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings",1000,"Females","Percent",52.1,"A",181,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings",1000,"Lives in a household","Value",242,"A",182,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings",1000,"Lives in a household","Percent",100.0,"A",183,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings",1000,"Lives in a communal establishment","Value",0,"A",184,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings",1000,"Lives in a communal establishment","Percent",0.0,"A",185,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",7,"A",186,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",187,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings",1000,"Area (Hectares)","Value",865.24,"A",188,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings",1000,"Area (Hectares)","Percent",,"Q",189,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings",1000,"Density (number of persons per hectare)","Value",0.3,"A",190,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings",1000,"Density (number of persons per hectare)","Percent",,"Q",191,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"All usual residents","Value",0,"A",192,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"All usual residents","Percent",,"Q",193,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Males","Value",0,"A",194,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Males","Percent",,"Q",195,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Females","Value",0,"A",196,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Females","Percent",,"Q",197,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Lives in a household","Value",0,"A",198,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Lives in a household","Percent",,"Q",199,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Lives in a communal establishment","Value",0,"A",200,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Lives in a communal establishment","Percent",,"Q",201,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",0,"A",202,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",203,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Area (Hectares)","Value",0.00,"A",204,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Area (Hectares)","Percent",,"Q",205,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Density (number of persons per hectare)","Value",,"Q",206,35645376
+"E00062207","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Density (number of persons per hectare)","Percent",,"Q",207,35645376
+"E00062208","2011 output areas","Total",2000,"All usual residents","Value",490,"A",208,35645376
+"E00062208","2011 output areas","Total",2000,"All usual residents","Percent",100.0,"A",209,35645376
+"E00062208","2011 output areas","Total",2000,"Males","Value",246,"A",210,35645376
+"E00062208","2011 output areas","Total",2000,"Males","Percent",50.2,"A",211,35645376
+"E00062208","2011 output areas","Total",2000,"Females","Value",244,"A",212,35645376
+"E00062208","2011 output areas","Total",2000,"Females","Percent",49.8,"A",213,35645376
+"E00062208","2011 output areas","Total",2000,"Lives in a household","Value",490,"A",214,35645376
+"E00062208","2011 output areas","Total",2000,"Lives in a household","Percent",100.0,"A",215,35645376
+"E00062208","2011 output areas","Total",2000,"Lives in a communal establishment","Value",0,"A",216,35645376
+"E00062208","2011 output areas","Total",2000,"Lives in a communal establishment","Percent",0.0,"A",217,35645376
+"E00062208","2011 output areas","Total",2000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",5,"A",218,35645376
+"E00062208","2011 output areas","Total",2000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",219,35645376
+"E00062208","2011 output areas","Total",2000,"Area (Hectares)","Value",383.28,"A",220,35645376
+"E00062208","2011 output areas","Total",2000,"Area (Hectares)","Percent",,"Q",221,35645376
+"E00062208","2011 output areas","Total",2000,"Density (number of persons per hectare)","Value",1.3,"A",222,35645376
+"E00062208","2011 output areas","Total",2000,"Density (number of persons per hectare)","Percent",,"Q",223,35645376
+"E00062208","2011 output areas","Urban (total)",2000,"All usual residents","Value",0,"A",224,35645376
+"E00062208","2011 output areas","Urban (total)",2000,"All usual residents","Percent",,"Q",225,35645376
+"E00062208","2011 output areas","Urban (total)",2000,"Males","Value",0,"A",226,35645376
+"E00062208","2011 output areas","Urban (total)",2000,"Males","Percent",,"Q",227,35645376
+"E00062208","2011 output areas","Urban (total)",2000,"Females","Value",0,"A",228,35645376
+"E00062208","2011 output areas","Urban (total)",2000,"Females","Percent",,"Q",229,35645376
+"E00062208","2011 output areas","Urban (total)",2000,"Lives in a household","Value",0,"A",230,35645376
+"E00062208","2011 output areas","Urban (total)",2000,"Lives in a household","Percent",,"Q",231,35645376
+"E00062208","2011 output areas","Urban (total)",2000,"Lives in a communal establishment","Value",0,"A",232,35645376
+"E00062208","2011 output areas","Urban (total)",2000,"Lives in a communal establishment","Percent",,"Q",233,35645376
+"E00062208","2011 output areas","Urban (total)",2000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",0,"A",234,35645376
+"E00062208","2011 output areas","Urban (total)",2000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",235,35645376
+"E00062208","2011 output areas","Urban (total)",2000,"Area (Hectares)","Value",0.00,"A",236,35645376
+"E00062208","2011 output areas","Urban (total)",2000,"Area (Hectares)","Percent",,"Q",237,35645376
+"E00062208","2011 output areas","Urban (total)",2000,"Density (number of persons per hectare)","Value",,"Q",238,35645376
+"E00062208","2011 output areas","Urban (total)",2000,"Density (number of persons per hectare)","Percent",,"Q",239,35645376
+"E00062208","2011 output areas","Urban major conurbation",1000,"All usual residents","Value",0,"A",240,35645376
+"E00062208","2011 output areas","Urban major conurbation",1000,"All usual residents","Percent",,"Q",241,35645376
+"E00062208","2011 output areas","Urban major conurbation",1000,"Males","Value",0,"A",242,35645376
+"E00062208","2011 output areas","Urban major conurbation",1000,"Males","Percent",,"Q",243,35645376
+"E00062208","2011 output areas","Urban major conurbation",1000,"Females","Value",0,"A",244,35645376
+"E00062208","2011 output areas","Urban major conurbation",1000,"Females","Percent",,"Q",245,35645376
+"E00062208","2011 output areas","Urban major conurbation",1000,"Lives in a household","Value",0,"A",246,35645376
+"E00062208","2011 output areas","Urban major conurbation",1000,"Lives in a household","Percent",,"Q",247,35645376
+"E00062208","2011 output areas","Urban major conurbation",1000,"Lives in a communal establishment","Value",0,"A",248,35645376
+"E00062208","2011 output areas","Urban major conurbation",1000,"Lives in a communal establishment","Percent",,"Q",249,35645376
+"E00062208","2011 output areas","Urban major conurbation",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",0,"A",250,35645376
+"E00062208","2011 output areas","Urban major conurbation",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",251,35645376
+"E00062208","2011 output areas","Urban major conurbation",1000,"Area (Hectares)","Value",0.00,"A",252,35645376
+"E00062208","2011 output areas","Urban major conurbation",1000,"Area (Hectares)","Percent",,"Q",253,35645376
+"E00062208","2011 output areas","Urban major conurbation",1000,"Density (number of persons per hectare)","Value",,"Q",254,35645376
+"E00062208","2011 output areas","Urban major conurbation",1000,"Density (number of persons per hectare)","Percent",,"Q",255,35645376
+"E00062208","2011 output areas","Urban minor conurbation",1000,"All usual residents","Value",0,"A",256,35645376
+"E00062208","2011 output areas","Urban minor conurbation",1000,"All usual residents","Percent",,"Q",257,35645376
+"E00062208","2011 output areas","Urban minor conurbation",1000,"Males","Value",0,"A",258,35645376
+"E00062208","2011 output areas","Urban minor conurbation",1000,"Males","Percent",,"Q",259,35645376
+"E00062208","2011 output areas","Urban minor conurbation",1000,"Females","Value",0,"A",260,35645376
+"E00062208","2011 output areas","Urban minor conurbation",1000,"Females","Percent",,"Q",261,35645376
+"E00062208","2011 output areas","Urban minor conurbation",1000,"Lives in a household","Value",0,"A",262,35645376
+"E00062208","2011 output areas","Urban minor conurbation",1000,"Lives in a household","Percent",,"Q",263,35645376
+"E00062208","2011 output areas","Urban minor conurbation",1000,"Lives in a communal establishment","Value",0,"A",264,35645376
+"E00062208","2011 output areas","Urban minor conurbation",1000,"Lives in a communal establishment","Percent",,"Q",265,35645376
+"E00062208","2011 output areas","Urban minor conurbation",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",0,"A",266,35645376
+"E00062208","2011 output areas","Urban minor conurbation",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",267,35645376
+"E00062208","2011 output areas","Urban minor conurbation",1000,"Area (Hectares)","Value",0.00,"A",268,35645376
+"E00062208","2011 output areas","Urban minor conurbation",1000,"Area (Hectares)","Percent",,"Q",269,35645376
+"E00062208","2011 output areas","Urban minor conurbation",1000,"Density (number of persons per hectare)","Value",,"Q",270,35645376
+"E00062208","2011 output areas","Urban minor conurbation",1000,"Density (number of persons per hectare)","Percent",,"Q",271,35645376
+"E00062208","2011 output areas","Urban city and town",1000,"All usual residents","Value",0,"A",272,35645376
+"E00062208","2011 output areas","Urban city and town",1000,"All usual residents","Percent",,"Q",273,35645376
+"E00062208","2011 output areas","Urban city and town",1000,"Males","Value",0,"A",274,35645376
+"E00062208","2011 output areas","Urban city and town",1000,"Males","Percent",,"Q",275,35645376
+"E00062208","2011 output areas","Urban city and town",1000,"Females","Value",0,"A",276,35645376
+"E00062208","2011 output areas","Urban city and town",1000,"Females","Percent",,"Q",277,35645376
+"E00062208","2011 output areas","Urban city and town",1000,"Lives in a household","Value",0,"A",278,35645376
+"E00062208","2011 output areas","Urban city and town",1000,"Lives in a household","Percent",,"Q",279,35645376
+"E00062208","2011 output areas","Urban city and town",1000,"Lives in a communal establishment","Value",0,"A",280,35645376
+"E00062208","2011 output areas","Urban city and town",1000,"Lives in a communal establishment","Percent",,"Q",281,35645376
+"E00062208","2011 output areas","Urban city and town",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",0,"A",282,35645376
+"E00062208","2011 output areas","Urban city and town",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",283,35645376
+"E00062208","2011 output areas","Urban city and town",1000,"Area (Hectares)","Value",0.00,"A",284,35645376
+"E00062208","2011 output areas","Urban city and town",1000,"Area (Hectares)","Percent",,"Q",285,35645376
+"E00062208","2011 output areas","Urban city and town",1000,"Density (number of persons per hectare)","Value",,"Q",286,35645376
+"E00062208","2011 output areas","Urban city and town",1000,"Density (number of persons per hectare)","Percent",,"Q",287,35645376
+"E00062208","2011 output areas","Urban city and town in a sparse setting",1000,"All usual residents","Value",0,"A",288,35645376
+"E00062208","2011 output areas","Urban city and town in a sparse setting",1000,"All usual residents","Percent",,"Q",289,35645376
+"E00062208","2011 output areas","Urban city and town in a sparse setting",1000,"Males","Value",0,"A",290,35645376
+"E00062208","2011 output areas","Urban city and town in a sparse setting",1000,"Males","Percent",,"Q",291,35645376
+"E00062208","2011 output areas","Urban city and town in a sparse setting",1000,"Females","Value",0,"A",292,35645376
+"E00062208","2011 output areas","Urban city and town in a sparse setting",1000,"Females","Percent",,"Q",293,35645376
+"E00062208","2011 output areas","Urban city and town in a sparse setting",1000,"Lives in a household","Value",0,"A",294,35645376
+"E00062208","2011 output areas","Urban city and town in a sparse setting",1000,"Lives in a household","Percent",,"Q",295,35645376
+"E00062208","2011 output areas","Urban city and town in a sparse setting",1000,"Lives in a communal establishment","Value",0,"A",296,35645376
+"E00062208","2011 output areas","Urban city and town in a sparse setting",1000,"Lives in a communal establishment","Percent",,"Q",297,35645376
+"E00062208","2011 output areas","Urban city and town in a sparse setting",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",0,"A",298,35645376
+"E00062208","2011 output areas","Urban city and town in a sparse setting",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",299,35645376
+"E00062208","2011 output areas","Urban city and town in a sparse setting",1000,"Area (Hectares)","Value",0.00,"A",300,35645376
+"E00062208","2011 output areas","Urban city and town in a sparse setting",1000,"Area (Hectares)","Percent",,"Q",301,35645376
+"E00062208","2011 output areas","Urban city and town in a sparse setting",1000,"Density (number of persons per hectare)","Value",,"Q",302,35645376
+"E00062208","2011 output areas","Urban city and town in a sparse setting",1000,"Density (number of persons per hectare)","Percent",,"Q",303,35645376
+"E00062208","2011 output areas","Rural (total)",2000,"All usual residents","Value",490,"A",304,35645376
+"E00062208","2011 output areas","Rural (total)",2000,"All usual residents","Percent",100.0,"A",305,35645376
+"E00062208","2011 output areas","Rural (total)",2000,"Males","Value",246,"A",306,35645376
+"E00062208","2011 output areas","Rural (total)",2000,"Males","Percent",50.2,"A",307,35645376
+"E00062208","2011 output areas","Rural (total)",2000,"Females","Value",244,"A",308,35645376
+"E00062208","2011 output areas","Rural (total)",2000,"Females","Percent",49.8,"A",309,35645376
+"E00062208","2011 output areas","Rural (total)",2000,"Lives in a household","Value",490,"A",310,35645376
+"E00062208","2011 output areas","Rural (total)",2000,"Lives in a household","Percent",100.0,"A",311,35645376
+"E00062208","2011 output areas","Rural (total)",2000,"Lives in a communal establishment","Value",0,"A",312,35645376
+"E00062208","2011 output areas","Rural (total)",2000,"Lives in a communal establishment","Percent",0.0,"A",313,35645376
+"E00062208","2011 output areas","Rural (total)",2000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",5,"A",314,35645376
+"E00062208","2011 output areas","Rural (total)",2000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",315,35645376
+"E00062208","2011 output areas","Rural (total)",2000,"Area (Hectares)","Value",383.28,"A",316,35645376
+"E00062208","2011 output areas","Rural (total)",2000,"Area (Hectares)","Percent",,"Q",317,35645376
+"E00062208","2011 output areas","Rural (total)",2000,"Density (number of persons per hectare)","Value",1.3,"A",318,35645376
+"E00062208","2011 output areas","Rural (total)",2000,"Density (number of persons per hectare)","Percent",,"Q",319,35645376
+"E00062208","2011 output areas","Rural town and fringe",1000,"All usual residents","Value",0,"A",320,35645376
+"E00062208","2011 output areas","Rural town and fringe",1000,"All usual residents","Percent",,"Q",321,35645376
+"E00062208","2011 output areas","Rural town and fringe",1000,"Males","Value",0,"A",322,35645376
+"E00062208","2011 output areas","Rural town and fringe",1000,"Males","Percent",,"Q",323,35645376
+"E00062208","2011 output areas","Rural town and fringe",1000,"Females","Value",0,"A",324,35645376
+"E00062208","2011 output areas","Rural town and fringe",1000,"Females","Percent",,"Q",325,35645376
+"E00062208","2011 output areas","Rural town and fringe",1000,"Lives in a household","Value",0,"A",326,35645376
+"E00062208","2011 output areas","Rural town and fringe",1000,"Lives in a household","Percent",,"Q",327,35645376
+"E00062208","2011 output areas","Rural town and fringe",1000,"Lives in a communal establishment","Value",0,"A",328,35645376
+"E00062208","2011 output areas","Rural town and fringe",1000,"Lives in a communal establishment","Percent",,"Q",329,35645376
+"E00062208","2011 output areas","Rural town and fringe",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",0,"A",330,35645376
+"E00062208","2011 output areas","Rural town and fringe",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",331,35645376
+"E00062208","2011 output areas","Rural town and fringe",1000,"Area (Hectares)","Value",0.00,"A",332,35645376
+"E00062208","2011 output areas","Rural town and fringe",1000,"Area (Hectares)","Percent",,"Q",333,35645376
+"E00062208","2011 output areas","Rural town and fringe",1000,"Density (number of persons per hectare)","Value",,"Q",334,35645376
+"E00062208","2011 output areas","Rural town and fringe",1000,"Density (number of persons per hectare)","Percent",,"Q",335,35645376
+"E00062208","2011 output areas","Rural town and fringe in a sparse setting",1000,"All usual residents","Value",0,"A",336,35645376
+"E00062208","2011 output areas","Rural town and fringe in a sparse setting",1000,"All usual residents","Percent",,"Q",337,35645376
+"E00062208","2011 output areas","Rural town and fringe in a sparse setting",1000,"Males","Value",0,"A",338,35645376
+"E00062208","2011 output areas","Rural town and fringe in a sparse setting",1000,"Males","Percent",,"Q",339,35645376
+"E00062208","2011 output areas","Rural town and fringe in a sparse setting",1000,"Females","Value",0,"A",340,35645376
+"E00062208","2011 output areas","Rural town and fringe in a sparse setting",1000,"Females","Percent",,"Q",341,35645376
+"E00062208","2011 output areas","Rural town and fringe in a sparse setting",1000,"Lives in a household","Value",0,"A",342,35645376
+"E00062208","2011 output areas","Rural town and fringe in a sparse setting",1000,"Lives in a household","Percent",,"Q",343,35645376
+"E00062208","2011 output areas","Rural town and fringe in a sparse setting",1000,"Lives in a communal establishment","Value",0,"A",344,35645376
+"E00062208","2011 output areas","Rural town and fringe in a sparse setting",1000,"Lives in a communal establishment","Percent",,"Q",345,35645376
+"E00062208","2011 output areas","Rural town and fringe in a sparse setting",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",0,"A",346,35645376
+"E00062208","2011 output areas","Rural town and fringe in a sparse setting",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",347,35645376
+"E00062208","2011 output areas","Rural town and fringe in a sparse setting",1000,"Area (Hectares)","Value",0.00,"A",348,35645376
+"E00062208","2011 output areas","Rural town and fringe in a sparse setting",1000,"Area (Hectares)","Percent",,"Q",349,35645376
+"E00062208","2011 output areas","Rural town and fringe in a sparse setting",1000,"Density (number of persons per hectare)","Value",,"Q",350,35645376
+"E00062208","2011 output areas","Rural town and fringe in a sparse setting",1000,"Density (number of persons per hectare)","Percent",,"Q",351,35645376
+"E00062208","2011 output areas","Rural village",1000,"All usual residents","Value",490,"A",352,35645376
+"E00062208","2011 output areas","Rural village",1000,"All usual residents","Percent",100.0,"A",353,35645376
+"E00062208","2011 output areas","Rural village",1000,"Males","Value",246,"A",354,35645376
+"E00062208","2011 output areas","Rural village",1000,"Males","Percent",50.2,"A",355,35645376
+"E00062208","2011 output areas","Rural village",1000,"Females","Value",244,"A",356,35645376
+"E00062208","2011 output areas","Rural village",1000,"Females","Percent",49.8,"A",357,35645376
+"E00062208","2011 output areas","Rural village",1000,"Lives in a household","Value",490,"A",358,35645376
+"E00062208","2011 output areas","Rural village",1000,"Lives in a household","Percent",100.0,"A",359,35645376
+"E00062208","2011 output areas","Rural village",1000,"Lives in a communal establishment","Value",0,"A",360,35645376
+"E00062208","2011 output areas","Rural village",1000,"Lives in a communal establishment","Percent",0.0,"A",361,35645376
+"E00062208","2011 output areas","Rural village",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",5,"A",362,35645376
+"E00062208","2011 output areas","Rural village",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",363,35645376
+"E00062208","2011 output areas","Rural village",1000,"Area (Hectares)","Value",383.28,"A",364,35645376
+"E00062208","2011 output areas","Rural village",1000,"Area (Hectares)","Percent",,"Q",365,35645376
+"E00062208","2011 output areas","Rural village",1000,"Density (number of persons per hectare)","Value",1.3,"A",366,35645376
+"E00062208","2011 output areas","Rural village",1000,"Density (number of persons per hectare)","Percent",,"Q",367,35645376
+"E00062208","2011 output areas","Rural village in a sparse setting",1000,"All usual residents","Value",0,"A",368,35645376
+"E00062208","2011 output areas","Rural village in a sparse setting",1000,"All usual residents","Percent",,"Q",369,35645376
+"E00062208","2011 output areas","Rural village in a sparse setting",1000,"Males","Value",0,"A",370,35645376
+"E00062208","2011 output areas","Rural village in a sparse setting",1000,"Males","Percent",,"Q",371,35645376
+"E00062208","2011 output areas","Rural village in a sparse setting",1000,"Females","Value",0,"A",372,35645376
+"E00062208","2011 output areas","Rural village in a sparse setting",1000,"Females","Percent",,"Q",373,35645376
+"E00062208","2011 output areas","Rural village in a sparse setting",1000,"Lives in a household","Value",0,"A",374,35645376
+"E00062208","2011 output areas","Rural village in a sparse setting",1000,"Lives in a household","Percent",,"Q",375,35645376
+"E00062208","2011 output areas","Rural village in a sparse setting",1000,"Lives in a communal establishment","Value",0,"A",376,35645376
+"E00062208","2011 output areas","Rural village in a sparse setting",1000,"Lives in a communal establishment","Percent",,"Q",377,35645376
+"E00062208","2011 output areas","Rural village in a sparse setting",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",0,"A",378,35645376
+"E00062208","2011 output areas","Rural village in a sparse setting",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",379,35645376
+"E00062208","2011 output areas","Rural village in a sparse setting",1000,"Area (Hectares)","Value",0.00,"A",380,35645376
+"E00062208","2011 output areas","Rural village in a sparse setting",1000,"Area (Hectares)","Percent",,"Q",381,35645376
+"E00062208","2011 output areas","Rural village in a sparse setting",1000,"Density (number of persons per hectare)","Value",,"Q",382,35645376
+"E00062208","2011 output areas","Rural village in a sparse setting",1000,"Density (number of persons per hectare)","Percent",,"Q",383,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings",1000,"All usual residents","Value",0,"A",384,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings",1000,"All usual residents","Percent",,"Q",385,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings",1000,"Males","Value",0,"A",386,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings",1000,"Males","Percent",,"Q",387,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings",1000,"Females","Value",0,"A",388,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings",1000,"Females","Percent",,"Q",389,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings",1000,"Lives in a household","Value",0,"A",390,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings",1000,"Lives in a household","Percent",,"Q",391,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings",1000,"Lives in a communal establishment","Value",0,"A",392,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings",1000,"Lives in a communal establishment","Percent",,"Q",393,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",0,"A",394,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",395,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings",1000,"Area (Hectares)","Value",0.00,"A",396,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings",1000,"Area (Hectares)","Percent",,"Q",397,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings",1000,"Density (number of persons per hectare)","Value",,"Q",398,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings",1000,"Density (number of persons per hectare)","Percent",,"Q",399,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"All usual residents","Value",0,"A",400,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"All usual residents","Percent",,"Q",401,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Males","Value",0,"A",402,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Males","Percent",,"Q",403,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Females","Value",0,"A",404,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Females","Percent",,"Q",405,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Lives in a household","Value",0,"A",406,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Lives in a household","Percent",,"Q",407,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Lives in a communal establishment","Value",0,"A",408,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Lives in a communal establishment","Percent",,"Q",409,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",0,"A",410,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",411,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Area (Hectares)","Value",0.00,"A",412,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Area (Hectares)","Percent",,"Q",413,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Density (number of persons per hectare)","Value",,"Q",414,35645376
+"E00062208","2011 output areas","Rural hamlet and isolated dwellings in a sparse setting",1000,"Density (number of persons per hectare)","Percent",,"Q",415,35645376
+"E00062209","2011 output areas","Total",2000,"All usual residents","Value",226,"A",416,35645376
+"E00062209","2011 output areas","Total",2000,"All usual residents","Percent",100.0,"A",417,35645376
+"E00062209","2011 output areas","Total",2000,"Males","Value",113,"A",418,35645376
+"E00062209","2011 output areas","Total",2000,"Males","Percent",50.0,"A",419,35645376
+"E00062209","2011 output areas","Total",2000,"Females","Value",113,"A",420,35645376
+"E00062209","2011 output areas","Total",2000,"Females","Percent",50.0,"A",421,35645376
+"E00062209","2011 output areas","Total",2000,"Lives in a household","Value",226,"A",422,35645376
+"E00062209","2011 output areas","Total",2000,"Lives in a household","Percent",100.0,"A",423,35645376
+"E00062209","2011 output areas","Total",2000,"Lives in a communal establishment","Value",0,"A",424,35645376
+"E00062209","2011 output areas","Total",2000,"Lives in a communal establishment","Percent",0.0,"A",425,35645376
+"E00062209","2011 output areas","Total",2000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",8,"A",426,35645376
+"E00062209","2011 output areas","Total",2000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",427,35645376
+"E00062209","2011 output areas","Total",2000,"Area (Hectares)","Value",34.60,"A",428,35645376
+"E00062209","2011 output areas","Total",2000,"Area (Hectares)","Percent",,"Q",429,35645376
+"E00062209","2011 output areas","Total",2000,"Density (number of persons per hectare)","Value",6.5,"A",430,35645376
+"E00062209","2011 output areas","Total",2000,"Density (number of persons per hectare)","Percent",,"Q",431,35645376
+"E00062209","2011 output areas","Urban (total)",2000,"All usual residents","Value",0,"A",432,35645376
+"E00062209","2011 output areas","Urban (total)",2000,"All usual residents","Percent",,"Q",433,35645376
+"E00062209","2011 output areas","Urban (total)",2000,"Males","Value",0,"A",434,35645376
+"E00062209","2011 output areas","Urban (total)",2000,"Males","Percent",,"Q",435,35645376
+"E00062209","2011 output areas","Urban (total)",2000,"Females","Value",0,"A",436,35645376
+"E00062209","2011 output areas","Urban (total)",2000,"Females","Percent",,"Q",437,35645376
+"E00062209","2011 output areas","Urban (total)",2000,"Lives in a household","Value",0,"A",438,35645376
+"E00062209","2011 output areas","Urban (total)",2000,"Lives in a household","Percent",,"Q",439,35645376
+"E00062209","2011 output areas","Urban (total)",2000,"Lives in a communal establishment","Value",0,"A",440,35645376
+"E00062209","2011 output areas","Urban (total)",2000,"Lives in a communal establishment","Percent",,"Q",441,35645376
+"E00062209","2011 output areas","Urban (total)",2000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",0,"A",442,35645376
+"E00062209","2011 output areas","Urban (total)",2000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",443,35645376
+"E00062209","2011 output areas","Urban (total)",2000,"Area (Hectares)","Value",0.00,"A",444,35645376
+"E00062209","2011 output areas","Urban (total)",2000,"Area (Hectares)","Percent",,"Q",445,35645376
+"E00062209","2011 output areas","Urban (total)",2000,"Density (number of persons per hectare)","Value",,"Q",446,35645376
+"E00062209","2011 output areas","Urban (total)",2000,"Density (number of persons per hectare)","Percent",,"Q",447,35645376
+"E00062209","2011 output areas","Urban major conurbation",1000,"All usual residents","Value",0,"A",448,35645376
+"E00062209","2011 output areas","Urban major conurbation",1000,"All usual residents","Percent",,"Q",449,35645376
+"E00062209","2011 output areas","Urban major conurbation",1000,"Males","Value",0,"A",450,35645376
+"E00062209","2011 output areas","Urban major conurbation",1000,"Males","Percent",,"Q",451,35645376
+"E00062209","2011 output areas","Urban major conurbation",1000,"Females","Value",0,"A",452,35645376
+"E00062209","2011 output areas","Urban major conurbation",1000,"Females","Percent",,"Q",453,35645376
+"E00062209","2011 output areas","Urban major conurbation",1000,"Lives in a household","Value",0,"A",454,35645376
+"E00062209","2011 output areas","Urban major conurbation",1000,"Lives in a household","Percent",,"Q",455,35645376
+"E00062209","2011 output areas","Urban major conurbation",1000,"Lives in a communal establishment","Value",0,"A",456,35645376
+"E00062209","2011 output areas","Urban major conurbation",1000,"Lives in a communal establishment","Percent",,"Q",457,35645376
+"E00062209","2011 output areas","Urban major conurbation",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",0,"A",458,35645376
+"E00062209","2011 output areas","Urban major conurbation",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",459,35645376
+"E00062209","2011 output areas","Urban major conurbation",1000,"Area (Hectares)","Value",0.00,"A",460,35645376
+"E00062209","2011 output areas","Urban major conurbation",1000,"Area (Hectares)","Percent",,"Q",461,35645376
+"E00062209","2011 output areas","Urban major conurbation",1000,"Density (number of persons per hectare)","Value",,"Q",462,35645376
+"E00062209","2011 output areas","Urban major conurbation",1000,"Density (number of persons per hectare)","Percent",,"Q",463,35645376
+"E00062209","2011 output areas","Urban minor conurbation",1000,"All usual residents","Value",0,"A",464,35645376
+"E00062209","2011 output areas","Urban minor conurbation",1000,"All usual residents","Percent",,"Q",465,35645376
+"E00062209","2011 output areas","Urban minor conurbation",1000,"Males","Value",0,"A",466,35645376
+"E00062209","2011 output areas","Urban minor conurbation",1000,"Males","Percent",,"Q",467,35645376
+"E00062209","2011 output areas","Urban minor conurbation",1000,"Females","Value",0,"A",468,35645376
+"E00062209","2011 output areas","Urban minor conurbation",1000,"Females","Percent",,"Q",469,35645376
+"E00062209","2011 output areas","Urban minor conurbation",1000,"Lives in a household","Value",0,"A",470,35645376
+"E00062209","2011 output areas","Urban minor conurbation",1000,"Lives in a household","Percent",,"Q",471,35645376
+"E00062209","2011 output areas","Urban minor conurbation",1000,"Lives in a communal establishment","Value",0,"A",472,35645376
+"E00062209","2011 output areas","Urban minor conurbation",1000,"Lives in a communal establishment","Percent",,"Q",473,35645376
+"E00062209","2011 output areas","Urban minor conurbation",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",0,"A",474,35645376
+"E00062209","2011 output areas","Urban minor conurbation",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",475,35645376
+"E00062209","2011 output areas","Urban minor conurbation",1000,"Area (Hectares)","Value",0.00,"A",476,35645376
+"E00062209","2011 output areas","Urban minor conurbation",1000,"Area (Hectares)","Percent",,"Q",477,35645376
+"E00062209","2011 output areas","Urban minor conurbation",1000,"Density (number of persons per hectare)","Value",,"Q",478,35645376
+"E00062209","2011 output areas","Urban minor conurbation",1000,"Density (number of persons per hectare)","Percent",,"Q",479,35645376
+"E00062209","2011 output areas","Urban city and town",1000,"All usual residents","Value",0,"A",480,35645376
+"E00062209","2011 output areas","Urban city and town",1000,"All usual residents","Percent",,"Q",481,35645376
+"E00062209","2011 output areas","Urban city and town",1000,"Males","Value",0,"A",482,35645376
+"E00062209","2011 output areas","Urban city and town",1000,"Males","Percent",,"Q",483,35645376
+"E00062209","2011 output areas","Urban city and town",1000,"Females","Value",0,"A",484,35645376
+"E00062209","2011 output areas","Urban city and town",1000,"Females","Percent",,"Q",485,35645376
+"E00062209","2011 output areas","Urban city and town",1000,"Lives in a household","Value",0,"A",486,35645376
+"E00062209","2011 output areas","Urban city and town",1000,"Lives in a household","Percent",,"Q",487,35645376
+"E00062209","2011 output areas","Urban city and town",1000,"Lives in a communal establishment","Value",0,"A",488,35645376
+"E00062209","2011 output areas","Urban city and town",1000,"Lives in a communal establishment","Percent",,"Q",489,35645376
+"E00062209","2011 output areas","Urban city and town",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Value",0,"A",490,35645376
+"E00062209","2011 output areas","Urban city and town",1000,"Schoolchild or full-time student aged 4 and over at their non term-time address","Percent",,"Q",491,35645376
+"E00062209","2011 output areas","Urban city and town",1000,"Area (Hectares)","Value",0.00,"A",492,35645376
+"E00062209","2011 output areas","Urban city and town",1000,"Area (Hectares)","Percent",,"Q",493,35645376
+"E00062209","2011 output areas","Urban city and town",1000,"Density (number of persons per hectare)","Value",,"Q",494,35645376
+"E00062209","2011 output areas","Urban city and town",1000,"Density (number of persons per hectare)","Percent",,"Q",495,35645376
+"E00062209","2011 output areas","Urban city and town in a sparse setting",1000,"All usual residents","Value",0,"A",496,35645376
+"E00062209","2011 output areas","Urban city and town in a sparse setting",1000,"All usual residents","Percent",,"Q",497,35645376
+"E00062209","2011 output areas","Urban city and town in a sparse setting",1000,"Males","Value",0,"A",498,35645376
+"E00062209","2011 output areas","Urban city and town in a sparse setting",1000,"Males","Percent",,"Q",499,35645376
