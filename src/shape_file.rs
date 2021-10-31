@@ -4,6 +4,12 @@ extern crate num_traits;
 extern crate polylabel;
 
 
+use std::collections::HashMap;
+use std::convert::TryFrom;
+use std::error::Error;
+use std::fmt::{Debug, Display, Formatter};
+use std::time::Instant;
+
 use csv::StringRecord;
 use geo_types::{Coordinate, LineString};
 use plotters::coord::Shift;
@@ -11,23 +17,19 @@ use plotters::prelude::*;
 use polylabel::polylabel;
 use shapefile::dbase::{FieldValue, Record};
 use shapefile::Shape;
-use std::collections::HashMap;
-use std::convert::TryFrom;
-use std::error::Error;
-use std::fmt::{Debug, Display, Formatter};
-use std::time::Instant;
 
-use crate::DwellingType::{BlockOfFlats, Commercial, DetachedHouse, FlatMaisonetteApartment, Other, SemiDetachedHouse, SharedHouse, Temporary, TerracedHouse};
+use crate::population_and_density_per_output_area::{AreaClassification, PersonType, PopulationRecord};
+use crate::shape_file::DwellingType::{BlockOfFlats, Commercial, DetachedHouse, FlatMaisonetteApartment, SemiDetachedHouse, SharedHouse, Temporary, TerracedHouse};
 
-const DEBUG_ITERATION: usize = 500;
-const GRID_SIZE: u32 = 16384;
+const DEBUG_ITERATION: usize = 5000;
+pub const GRID_SIZE: u32 = 16384;
 const X_OFFSET: i32 = 75000;
 const Y_OFFSET: i32 = 1000;
 
 fn convert_geo_point_to_pixel(coord: Coordinate<f64>) -> (i32, i32) {
     (
         (coord.x - X_OFFSET as f64) as i32 / 45,
-        GRID_SIZE as i32 - (coord.y - Y_OFFSET as f64) as i32 / 45,
+        (coord.y - Y_OFFSET as f64) as i32 / 45,
     )
 }
 
@@ -69,7 +71,8 @@ impl Area {
             panic!("Unexpected field value type for name: {}", name_record);
         }
 
-        let alt_name_record = record.get("altname").expect("Missing required field 'alt_name'");
+        let fuck = &FieldValue::Character(Option::from(String::new()));
+        let alt_name_record = record.get("altname").unwrap_or(fuck);//.expect("Missing required field 'alt_name'");
         let alt_name;
         if let FieldValue::Character(option_val) = alt_name_record {
             alt_name = option_val.clone().unwrap_or_else(|| String::from(""));
@@ -102,7 +105,7 @@ impl Area {
 }
 
 
-struct Map {
+pub struct Map {
     data: Vec<Area>,
     min_x: i32,
     min_y: i32,
@@ -114,8 +117,9 @@ impl Map {
     fn default() -> Map {
         Map { data: Vec::default(), min_x: i32::MAX, min_y: i32::MAX, max_x: i32::MIN, max_y: i32::MIN }
     }
-    fn from_file(filename: &str) -> Map {
-        //census_map_areas/England_wa_2011/england_wa_2011.shp
+    pub(crate) fn from_file(filename: &str) -> Map {
+        //let filename="census_map_areas/England_wa_2011/england_wa_2011.shp";
+
         let mut map = Map::default();
         let mut reader =
             shapefile::Reader::from_path(filename)
@@ -151,7 +155,7 @@ impl Map {
     fn draw_with_labels<T: plotters::prelude::DrawingBackend>(&self, drawing_area: DrawingArea<T, Shift>) {
         self.draw(drawing_area, true);
     }
-    fn draw<T: plotters::prelude::DrawingBackend>(&self, drawing_area: DrawingArea<T, Shift>, show_labels: bool) {
+    pub(crate) fn draw<T: plotters::prelude::DrawingBackend>(&self, drawing_area: DrawingArea<T, Shift>, show_labels: bool) {
         let start_time = Instant::now();
         println!("Drawing output areas on map...");
         let style = TextStyle::from(("sans-serif", 20).into_font()).color(&RED);
@@ -196,6 +200,38 @@ impl Map {
             }
             if index % DEBUG_ITERATION == 0 {
                 println!("  At index {} with time {:?}", index, start_time.elapsed());
+            }
+        }
+        drawing_area.present().unwrap();
+        println!("Finished drawing in {:?}", start_time.elapsed());
+    }
+    pub(crate) fn draw_test<T: plotters::prelude::DrawingBackend>(&self, drawing_area: DrawingArea<T, Shift>, show_labels: bool, census_data: HashMap<String, PopulationRecord>) {
+        let start_time = Instant::now();
+        let mut chart = ChartBuilder::on(&drawing_area).build_cartesian_2d(0..(GRID_SIZE as i32), 0..(GRID_SIZE as i32)).unwrap();
+        println!("Drawing output areas on map...");
+        let style = TextStyle::from(("sans-serif", 20).into_font()).color(&RED);
+        for (index, data) in self.data.iter().enumerate() {
+            if show_labels {
+                let centre = data.centre.unwrap_or_else(|| data.get_centre_point());
+                let centre = convert_geo_point_to_pixel(centre);
+                drawing_area.draw_text(&data.label, &style, centre).unwrap();
+            }
+            let polygon = &data.points;
+            let polygon: Vec<(i32, i32)> = polygon.exterior().0.iter().map(|p| {
+                let f = convert_geo_point_to_pixel(*p);
+                return (f.0 as i32, f.1 as i32);
+            }).collect();
+            let record = census_data.get(&data.label);
+            let mut colour: u8 = 20;
+            if let Some(pop) = record {
+                println!("Got: {} {} ", pop.geography_code, (pop.population_counts[AreaClassification::Total][PersonType::All]));
+                colour = (pop.population_counts[AreaClassification::Total][PersonType::All] / 2) as u8;
+            }
+            chart.draw_series(std::iter::once(plotters::prelude::Polygon::new(polygon, &plotters::style::RGBColor(colour, 0, 0)))).unwrap();
+
+            if index % DEBUG_ITERATION == 0 {
+                println!("  At index {} with time {:?}", index, start_time.elapsed());
+                return;
             }
         }
         drawing_area.present().unwrap();
@@ -268,22 +304,13 @@ impl HouseholdType {
     }
 }
 
-impl TryFrom<StringRecord> for HouseholdType {
-    type Error = ();
-
-    fn try_from(value: StringRecord) -> Result<Self, Self::Error> {
-        value.hea
-        todo!()
-    }
-}
-
 fn read_csv(filename: &str) -> Result<(), Box<dyn Error>> {
     let mut reader = csv::Reader::from_path(filename)?;
     let headers: Vec<&str> = reader.headers()?.iter().map(|s| s).collect();
     let mut outputVec: Vec<HouseholdType> = Vec::new();
     for record in reader.records() {
         let record = record?;
-        let household = HouseholdType::new(record.get(0).ok_or(ParsingErrors::MissingDate)?.to_string(), record.get(2).ok_or(ParsingErrors::MissingGeographyCode)?.to_string();
+        let household = HouseholdType::new(record.get(0).ok_or(ParsingErrors::MissingDate)?.to_string(), record.get(2).ok_or(ParsingErrors::MissingGeographyCode)?.to_string());
         for (index, value) in record.iter().enumerate() {
             if index < 4 {
                 continue;

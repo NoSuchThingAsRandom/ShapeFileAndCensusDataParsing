@@ -1,5 +1,5 @@
 use std::fmt::{Debug, Display, Formatter};
-use std::num::ParseIntError;
+use std::num::{ParseFloatError, ParseIntError};
 
 use crate::parsing_error::ParsingErrorType::{JSONParseError, NetworkError};
 
@@ -43,9 +43,21 @@ impl From<serde_json::Error> for ParsingError {
     }
 }
 
+impl From<serde_plain::Error> for ParsingError {
+    fn from(err: serde_plain::Error) -> Self {
+        ParsingError { error_type: JSONParseError, name: Some(format!("{:?}", err)) }
+    }
+}
+
 impl From<ParseIntError> for ParsingError {
     fn from(e: ParseIntError) -> Self {
         ParsingError { error_type: ParsingErrorType::InvalidDataType(format!("Failed to parse int")), name: Some(format!("{:?}", e)) }
+    }
+}
+
+impl From<ParseFloatError> for ParsingError {
+    fn from(e: ParseFloatError) -> Self {
+        ParsingError { error_type: ParsingErrorType::InvalidDataType(format!("Failed to parse float")), name: Some(format!("{:?}", e)) }
     }
 }
 

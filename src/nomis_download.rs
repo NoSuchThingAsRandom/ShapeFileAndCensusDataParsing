@@ -6,7 +6,7 @@ use std::fs::File;
 use std::io::Write;
 use std::iter::Map;
 
-use log::{error, info, warn};
+use log::{debug, error, info, warn};
 use serde_json::{Number, Value};
 
 use crate::parsing_error::{ParsingError, ParsingErrorType};
@@ -151,26 +151,35 @@ impl DataFetcher {
                 }
         */        Ok(())
     }
-    pub async fn get_table(&self, id: String, size: usize) -> Result<String, ParsingError> {
+    pub async fn get_table(&self, id: String, number_of_records: usize, page_size: usize) -> Result<String, ParsingError> {
         let mut path = String::from(NOMIS_API);
         path.push_str(&id);
         path.push_str(".data.csv");
         path.push_str("?geography=");
         path.push_str(ENGLAND_OUTPUT_AREAS_CODE);
         path.push_str("&recordlimit=");
-        path.push_str(size.to_string().as_str());
-        path.push_str("&select=");
-        path.push_str(SELECTED_COLUMNS);
-
-        println!("Making request to: {}", path);
-        let request = self.client.get(path).send().await?;
-        println!("Got response: {:?}", request);
-        let data = request.text().await?;
+        path.push_str(page_size.to_string().as_str());
+        let mut data = String::new();
+        for index in 0..(number_of_records as f64 / page_size as f64).ceil() as usize {
+            let mut to_send = path.clone();
+            to_send.push_str("&RecordOffset=");
+            to_send.push_str((index * page_size).to_string().as_str());
+            if index != 0 {
+                to_send.push_str("&ExcludeColumnHeadings=true");
+            }
+            to_send.push_str("&select=");
+            to_send.push_str(SELECTED_COLUMNS);
+            info!("Making request to: {}", to_send);
+            let request = self.client.get(to_send).send().await?;
+            debug!("Got response: {:?}", request);
+            let new_data = request.text().await?;
+            data.push_str(new_data.as_str());
+        }
         return Ok(data);
     }
-    pub fn parse_table<R: std::io::Read>(mut data: csv::Reader<R>) -> Result<Vec<PopulationRecord>, ParsingError> {
+    pub fn parse_table<R: std::io::Read>(mut data: csv::Reader<R>) -> Result<HashMap<String, PopulationRecord>, ParsingError> {
         //let mut csv_reader = csv::Reader::from_reader(data.as_bytes());
-        let mut output = Vec::new();
+        let mut output = HashMap::new();
 
         let mut current_area = String::from("");
         let mut buffer = Vec::new();
@@ -183,14 +192,13 @@ impl DataFetcher {
                         if !current_area.is_empty() {
                             let pop_record = PopulationRecord::try_from(buffer);
                             match pop_record {
-                                Ok(pop_record) => output.push(pop_record),
-                                Err(e) => error!("{}",e)
+                                Ok(pop_record) => { output.insert(current_area, pop_record); },
+                                Err(e) => { error!("{}",e); }
                             }
                             buffer = Vec::new();
                         }
                         current_area = String::from(&record.geography_name);
                     }
-                    println!("{:?}", record);
                     buffer.push(record);
                 }
                 Err(e) => error!("{}",e)
@@ -203,7 +211,7 @@ impl DataFetcher {
         let mut json: Value = serde_json::from_reader(file).map_err(|e| format!("{:?}", e))?;
         Ok(json)
     }
-    pub fn write_file(filename: String, data: String) -> Result<(), String> {
+    pub fn write_file(filename: String, data: &String) -> Result<(), String> {
         let mut file = File::create(filename).map_err(|e| format!("{:?}", e))?;
         file.write_all(data.as_bytes()).map_err(|e| format!("{:?}", e))?;
         file.flush();
