@@ -32,7 +32,7 @@ async fn main() -> Result<(), String> {
     info!("Fetched data in: {:?}", start_time.elapsed());
     nomis_download::DataFetcher::write_file("data/download/PopulationAndDensityPerEnglandOutputArea(144)-35645376-Records.csv".to_string(), &data).unwrap();
     info!("Saved data in: {:?}", start_time.elapsed());
-
+    return Ok(());
     let reader = csv::Reader::from_reader(data.as_bytes());
     let tables = DataFetcher::parse_table(reader).unwrap();
     info!("Built tables in: {:?}", start_time.elapsed());

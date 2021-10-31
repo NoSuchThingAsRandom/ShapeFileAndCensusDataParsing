@@ -5,7 +5,7 @@ use std::fmt::{Debug, Display, Formatter};
 use std::fs::File;
 use std::io::Write;
 use std::iter::Map;
-
+use std::time::Instant;
 use log::{debug, error, info, warn};
 use serde_json::{Number, Value};
 
@@ -160,6 +160,7 @@ impl DataFetcher {
         path.push_str("&recordlimit=");
         path.push_str(page_size.to_string().as_str());
         let mut data = String::new();
+	let start_time=Instant::now();
         for index in 0..(number_of_records as f64 / page_size as f64).ceil() as usize {
             let mut to_send = path.clone();
             to_send.push_str("&RecordOffset=");
@@ -174,6 +175,7 @@ impl DataFetcher {
             debug!("Got response: {:?}", request);
             let new_data = request.text().await?;
             data.push_str(new_data.as_str());
+	    info!("Completed request {} in {:?}",index,start_time.elapsed());
         }
         return Ok(data);
     }
